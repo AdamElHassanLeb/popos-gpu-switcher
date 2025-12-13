@@ -1,0 +1,60 @@
+# =========================
+# Go build artifacts
+# =========================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Binaries / build output
+build/
+dist/
+bin/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# =========================
+# Fyne
+# =========================
+fyne-cross/
+fyne-packager/
+*.app
+*.apk
+*.ipa
+
+# =========================
+# IDEs / Editors
+# =========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+
+# =========================
+# C / CGO cache (safe to ignore)
+# =========================
+*.a
+*.o
