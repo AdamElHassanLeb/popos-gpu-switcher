@@ -1,11 +1,14 @@
 package service
 
-import "context"
+import (
+	"context"
+	"sync"
+)
 
 type GpuModeService interface {
-	// AvailableModes returns the supported mode strings for this machine.
+	// AvailableModes returns the supported modes for this machine.
 	// Typical values: integrated, nvidia, hybrid, compute.
-	AvailableModes(ctx context.Context) ([]string, error)
+	AvailableModes(ctx context.Context) (*Modes, error)
 
 	// CurrentMode returns the currently selected graphics mode.
 	CurrentMode(ctx context.Context) (string, error)
@@ -16,4 +19,14 @@ type GpuModeService interface {
 
 	//Reboot, reboots machine on demand
 	Reboot(ctx context.Context) error
+}
+
+type Mode struct {
+	Name        string
+	Description string
+}
+
+type Modes struct {
+	mu      sync.Mutex
+	modeMap map[string]Mode
 }
