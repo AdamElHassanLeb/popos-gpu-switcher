@@ -1,6 +1,10 @@
 package main
 
-import assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/assetmanager"
+import (
+	"context"
+
+	assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/assetmanager"
+)
 
 var AppMessages *assetmanager.Messages
 
@@ -13,5 +17,5 @@ func main() {
 		panic(err)
 	}
 
-	StartUI()
+	StartUI(context.Background())
 }
