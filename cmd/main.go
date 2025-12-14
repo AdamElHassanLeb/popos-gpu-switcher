@@ -1,14 +1,11 @@
 package main
 
 import (
-	"context"
-
 	assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/assetmanager"
+	services "github.com/AdamElHassanLeb/popos-gpu-switcher/internal/services"
 )
 
 var AppMessages *assetmanager.Messages
-
-const SelectedLanguage string = "en"
 
 func main() {
 	var err error
@@ -17,5 +14,11 @@ func main() {
 		panic(err)
 	}
 
-	StartUI(context.Background())
+	service, err := services.GetGPUService()
+
+	if err != nil {
+		StartUI(service, false)
+	} else {
+		StartUI(service, true)
+	}
 }
