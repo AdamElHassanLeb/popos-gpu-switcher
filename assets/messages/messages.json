@@ -1,18 +1,66 @@
 {
-  "Errors": {
+  "Languages": {
     "en": {
-      "ErrUnsupportedOS": "Unsupported operating system.",
-      "ErrInvalidGPUMode": "Invalid GPU mode selected.",
-      "ErrModeSwitchUnsuccesful": "Failed to switch GPU mode.",
-      "ErrReboot": "Failed to reboot the system.",
-      "ErrCurrentMode": "Failed to determine the current GPU mode."
+      "Errors": {
+        "ErrUnsupportedOS": "Unsupported operating system.",
+        "ErrInvalidGPUMode": "Invalid GPU mode selected.",
+        "ErrModeSwitchUnsuccesful": "Failed to switch GPU mode.",
+        "ErrReboot": "Failed to reboot the system.",
+        "ErrCurrentMode": "Failed to determine the current GPU mode."
+      },
+      "Systems": {
+        "system76": {
+          "Modes": {
+            "integrated": {
+              "Name": "integrated",
+              "Description": "Use only the integrated GPU for lowest power usage"
+            },
+            "nvidia": {
+              "Name": "nvidia",
+              "Description": "Use the NVIDIA GPU for maximum performance"
+            },
+            "hybrid": {
+              "Name": "hybrid",
+              "Description": "Use integrated GPU with NVIDIA on-demand"
+            },
+            "compute": {
+              "Name": "compute",
+              "Description": "Use NVIDIA GPU only for compute workloads"
+            }
+          }
+        }
+      }
     },
     "ar": {
-      "ErrUnsupportedOS": "نظام التشغيل غير مدعوم.",
-      "ErrInvalidGPUMode": "تم اختيار وضع GPU غير صالح.",
-      "ErrModeSwitchUnsuccesful": "فشل في تبديل وضع معالج الرسوميات.",
-      "ErrReboot": "فشل في إعادة تشغيل النظام.",
-      "ErrCurrentMode": "تعذر تحديد وضع معالج الرسوميات الحالي."
+      "Errors": {
+        "ErrUnsupportedOS": "نظام التشغيل غير مدعوم.",
+        "ErrInvalidGPUMode": "تم اختيار وضع GPU غير صالح.",
+        "ErrModeSwitchUnsuccesful": "فشل في تبديل وضع معالج الرسوميات.",
+        "ErrReboot": "فشل في إعادة تشغيل النظام.",
+        "ErrCurrentMode": "تعذر تحديد وضع معالج الرسوميات الحالي."
+      },
+      "Systems": {
+        "system76": {
+          "Modes": {
+            "integrated": {
+              "Name": "integrated",
+              "Description": "استخدم معالج الرسوميات المدمج فقط لأقل استهلاك للطاقة"
+            },
+            "nvidia": {
+              "Name": "nvidia",
+              "Description": "استخدم معالج NVIDIA لأقصى أداء"
+            },
+            "hybrid": {
+              "Name": "hybrid",
+              "Description": "استخدم المعالج المدمج مع تشغيل NVIDIA عند الحاجة"
+            },
+            "compute": {
+              "Name": "compute",
+              "Description": "استخدم NVIDIA فقط لأعمال الحوسبة (CUDA) دون عرض رسومي"
+            }
+          }
+        }
+      }
     }
   }
 }

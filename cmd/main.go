@@ -1,12 +1,14 @@
 package main
 
-var AppMessages *Messages
+import assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/AssetManager"
+
+var AppMessages *assetmanager.Messages
 
 const SelectedLanguage string = "en"
 
 func main() {
 	var err error
-	AppMessages, err = LoadMessages()
+	AppMessages, err = assetmanager.LoadMessages()
 	if err != nil {
 		panic(err)
 	}
