@@ -13,20 +13,16 @@ func (s *System76_GpuModeService) AvailableModes(ctx context.Context) (*Modes, e
 	modes := Modes{
 		modeMap: map[string]Mode{
 			"integrated": {
-				Name:        "integrated",
-				Description: "Use only the integrated GPU for lowest power usage",
+				Name: "integrated",
 			},
 			"nvidia": {
-				Name:        "nvidia",
-				Description: "Use the NVIDIA GPU for maximum performance",
+				Name: "nvidia",
 			},
 			"hybrid": {
-				Name:        "hybrid",
-				Description: "Use integrated GPU with NVIDIA on-demand",
+				Name: "hybrid",
 			},
 			"compute": {
-				Name:        "compute",
-				Description: "Use NVIDIA GPU only for compute workloads",
+				Name: "compute",
 			},
 		},
 	}
