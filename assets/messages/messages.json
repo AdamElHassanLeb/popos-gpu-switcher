@@ -6,6 +6,7 @@
         "ErrInvalidGPUMode": "Invalid GPU mode selected.",
         "ErrModeSwitchUnsuccesful": "Failed to switch GPU mode.",
         "ErrReboot": "Failed to reboot the system.",
+        "ErrShutdown": "Failed to shut down the system.",
         "ErrCurrentMode": "Failed to determine the current GPU mode."
       },
       "Systems": {
@@ -34,9 +35,10 @@
     "ar": {
       "Errors": {
         "ErrUnsupportedOS": "نظام التشغيل غير مدعوم.",
-        "ErrInvalidGPUMode": "تم اختيار وضع GPU غير صالح.",
-        "ErrModeSwitchUnsuccesful": "فشل في تبديل وضع معالج الرسوميات.",
-        "ErrReboot": "فشل في إعادة تشغيل النظام.",
+        "ErrInvalidGPUMode": "وضع معالج الرسوميات المحدد غير صالح.",
+        "ErrModeSwitchUnsuccesful": "تعذر تبديل وضع معالج الرسوميات.",
+        "ErrReboot": "تعذر إعادة تشغيل النظام.",
+        "ErrShutdown": "تعذر إيقاف تشغيل النظام.",
         "ErrCurrentMode": "تعذر تحديد وضع معالج الرسوميات الحالي."
       },
       "Systems": {
@@ -44,19 +46,19 @@
           "Modes": {
             "integrated": {
               "Name": "integrated",
-              "Description": "استخدم معالج الرسوميات المدمج فقط لأقل استهلاك للطاقة"
+              "Description": "استخدام معالج الرسوميات المدمج فقط لتقليل استهلاك الطاقة"
             },
             "nvidia": {
               "Name": "nvidia",
-              "Description": "استخدم معالج NVIDIA لأقصى أداء"
+              "Description": "استخدام معالج الرسوميات من NVIDIA لتحقيق أعلى أداء"
             },
             "hybrid": {
               "Name": "hybrid",
-              "Description": "استخدم المعالج المدمج مع تشغيل NVIDIA عند الحاجة"
+              "Description": "استخدام المعالج المدمج مع تشغيل NVIDIA عند الحاجة"
             },
             "compute": {
               "Name": "compute",
-              "Description": "استخدم NVIDIA فقط لأعمال الحوسبة (CUDA) دون عرض رسومي"
+              "Description": "استخدام NVIDIA لأعمال الحوسبة فقط دون إخراج رسومي"
             }
           }
         }

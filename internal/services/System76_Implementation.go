@@ -46,3 +46,11 @@ func (s *System76_GpuModeService) Reboot(ctx context.Context) error {
 	run("pkexec", "reboot")
 	return CustomErrors.ErrReboot
 }
+
+func (s *System76_GpuModeService) Shutdown(ctx context.Context) error {
+	_, err := run("pkexec", "systemctl", "poweroff", "-i")
+	if err != nil {
+		return CustomErrors.ErrShutdown
+	}
+	return nil
+}

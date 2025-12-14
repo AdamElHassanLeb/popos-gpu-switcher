@@ -19,6 +19,8 @@ type GpuModeService interface {
 
 	//Reboot, reboots machine on demand
 	Reboot(ctx context.Context) error
+
+	Shutdown(ctx context.Context) error
 }
 
 type Mode struct {
