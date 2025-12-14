@@ -22,7 +22,7 @@ type GpuModeService interface {
 }
 
 type Mode struct {
-	Name        string
+	Name string
 }
 
 type Modes struct {

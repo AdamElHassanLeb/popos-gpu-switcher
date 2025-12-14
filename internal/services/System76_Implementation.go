@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	CustomErrors "github.com/AdamElHassanLeb/popos-gpu-switcher/internal/customerrors"
+	CustomErrors "github.com/AdamElHassanLeb/popos-gpu-switcher/customerrors"
 )
 
 type System76_GpuModeService struct{}

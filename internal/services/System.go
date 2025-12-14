@@ -3,7 +3,7 @@ package service
 import (
 	"os/exec"
 
-	CustomErrors "github.com/AdamElHassanLeb/popos-gpu-switcher/internal/customerrors"
+	CustomErrors "github.com/AdamElHassanLeb/popos-gpu-switcher/customerrors"
 )
 
 func isSystem76() bool {
