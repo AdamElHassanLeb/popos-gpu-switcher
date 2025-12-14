@@ -1,6 +1,6 @@
 package main
 
-import assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/AssetManager"
+import assetmanager "github.com/AdamElHassanLeb/popos-gpu-switcher/assetmanager"
 
 var AppMessages *assetmanager.Messages
 
