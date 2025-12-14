@@ -1,0 +1,18 @@
+{
+  "Errors": {
+    "en": {
+      "ErrUnsupportedOS": "Unsupported operating system.",
+      "ErrInvalidGPUMode": "Invalid GPU mode selected.",
+      "ErrModeSwitchUnsuccesful": "Failed to switch GPU mode.",
+      "ErrReboot": "Failed to reboot the system.",
+      "ErrCurrentMode": "Failed to determine the current GPU mode."
+    },
+    "ar": {
+      "ErrUnsupportedOS": "نظام التشغيل غير مدعوم.",
+      "ErrInvalidGPUMode": "تم اختيار وضع GPU غير صالح.",
+      "ErrModeSwitchUnsuccesful": "فشل في تبديل وضع معالج الرسوميات.",
+      "ErrReboot": "فشل في إعادة تشغيل النظام.",
+      "ErrCurrentMode": "تعذر تحديد وضع معالج الرسوميات الحالي."
+    }
+  }
+}
